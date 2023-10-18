@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  client:
+    image: 'grpc-boilerplate:client'
+    ports:
+      - "8088:8088"
+    build:
+      context: .
+    depends_on:
+      - server
+
+  server:
+    image: 'grpc-boilerplate:server'
+    ports:
+      - "8000:8000"

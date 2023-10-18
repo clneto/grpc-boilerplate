@@ -1,0 +1,15 @@
+syntax = "proto3"; /* default is proto2 */
+
+option java_package = "clneto.sales";
+
+service EchoService {
+  rpc echo (EchoRequest) returns (EchoResponse) {}
+}
+
+message EchoRequest {
+  string message = 1;
+}
+
+message EchoResponse {
+  string message = 1;
+}

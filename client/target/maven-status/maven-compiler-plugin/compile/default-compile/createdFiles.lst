@@ -1,0 +1,4 @@
+clneto/sales/controller/EchoController.class
+clneto/sales/GrpcModule.class
+clneto/sales/GrpcClientApplication.class
+clneto/sales/EchoClient.class
